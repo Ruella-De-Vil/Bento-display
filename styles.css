@@ -5,13 +5,17 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #121212;
 }
 
 .grid {
-    width: 55em;
-    height: 40em;
+    width: 70em;
+    height: 55em;
     margin: auto;
     display: grid;
+    gap: 2em;
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
@@ -29,59 +33,203 @@ body {
 
 .block-one {
     grid-area: block-one;
+    display: flex;
+    flex-direction: column;
     background-color: #7650dc;
-    margin: 0 1em -1em 1em ;
+    height: 21em;
+    width: 37em;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 1em 0;
+}
+
+.block-one p:first-of-type {
+    font-size: 4.2rem;
+    font-weight: 400;
+    margin: 0 0.2em;
+    line-height: 1;
+    padding: 0.5em 0 0 0;
+}
+
+.block-one span {
+    color: #ffcb6b;
+}
+
+.block-one img {
+    width: 11em;
+    margin-top: 1.5em;
 }
 
 .block-two {
     grid-area: block-two;
     background-color: #ffffff;
-    margin: 3em 1em 2em 1em;
+    height: 16em;
+    width: 16em;
+    position: relative;
+    overflow: hidden;
+    padding: 0.7em 0 0.5em 1em;
+}
+.block-two img {
+    width: 22em;
+}
 
+.block-two p {
+    font-size: 2.1rem;
+    padding: 0.3em 0.5em 0 0.5em;
+    margin: 0;
+    line-height: 1;
 }
 
 .block-three {
     grid-area: block-three;
-    background-color: hsl(39, 100%, 71%);
-    margin: 3em 1em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffcb6b;
+    height: 16.5em;
+    width: 14em;
+    padding: 0.5em 1em 0 2em;
+    align-items: center;
+    overflow: hidden;
+}
+
+.block-three p {
+    font-size: 2.1em;
+    line-height: 1;
+    margin-top: 0.5em;
+}
+
+.block-three img {
+    width: 14em;
+    padding: 0;
+    margin: -0.5em 0 0 -0.8em;
 }
 
 .block-four {
     grid-area: block-four;
     background-color: #dacffc;
-    margin: 0 0 2em 1em;
+    width: 15em;
+    padding-left: 2em;
+    padding-top: 1em;
+    overflow: hidden;
+}
+
+.block-four p:first-of-type {
+    font-size: 2.1em;
+    line-height: 1;
+    padding-right: 0.5em;
+    padding-top: 1em;
+}
+
+.block-four img {
+    width: 23.5em;
+    margin-top: -0.5em;
+}
+
+.block-four p:last-of-type {
+    padding-right: 2em;
+    font-size: 1.2em;
+    line-height: 1;
 }
 
 .block-five {
     grid-area: block-five;
     background-color: #7650dc;
-    margin: 0 0 0 1em;
+    height: 15em;
+    width: 34em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+}
+
+.block-five img {
+    width: 15em;
+    height: 12em;
+}
+
+.block-five p {
+    color: #ffffff;
+    font-size: 2.4em;
+    line-height: 1;
+    padding-left: 0.5em;
+    
 }
 
 .block-six {
     grid-area: block-six;
     background-color: #ffffff;
-    margin: 0 1em;
+    height: 15em;
+    width: 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.block-six p span {
+    font-size: 4.1em;
+    font-weight: 500;
+}
+
+.block-six img {
+    width: 10em;
+    padding: 1em 0;
 }
 
 .block-seven {
     grid-area: block-seven;
     background-color: #f9eee1;
-    margin: 0 1em -2em 0;
+    width: 17.5em;
+    height: 28em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.block-seven p {
+    padding: 0 1em;
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.block-seven em {
+    color: #7650dc;
+}
+
+.block-seven img {
+    width: 14em;
 }
 
 .block-eight {
     grid-area: block-eight;
-    background-color: hsl(39, 100%, 71%);
-    margin: 4em 1em 0 0;
+    background-color: #ffcb6b;
+    width: 17.5em;
+    height: 28em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-eight p {
+    padding: 0 0.7em;
+    margin-top: 0.5em;
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.block-eight img {
+    width: 14em;
+    margin-bottom: -em;
 }
 
 article {
-    border-radius: 0.4em;
+    border-radius: 0.6em;
 }
 
-img {
-    width: 100%;
-}
-/* 
-- Black: hsl(0, 0%, 7%)
+
