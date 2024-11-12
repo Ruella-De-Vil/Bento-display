@@ -257,3 +257,231 @@ body {
 article {
     border-radius: 0.6em;
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 4em 2em;
+    }
+
+    .grid {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "block-one block-one"
+        "block-two block-three"
+        "block-four block-four"
+        "block-five block-five"
+        "block-six block-seven"
+        "block-eight block-eight"
+        ;
+        place-items: center;
+        padding: 2em;
+    }
+
+    .block-one,.block-two, .block-three, .block-four, .block-five, .block-six, .block-seven, .block-eight {
+        position: unset;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .block-four {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-four p {
+        font-size: 2em;
+        padding-left: 2em;
+    }
+
+    .block-four img {
+        width: 8em;
+        height:7em;
+        margin-left: 2em;
+    }
+
+    .block-five p {
+        text-align: center;
+        font-size: 2.5em;
+        padding: 0 1em;
+
+    }
+
+    .block-five img {
+        width: 10em;
+        height:9em;
+        margin-left: 2em;
+        padding: 0.5em;
+    }
+
+    .block-eight {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-eight p {
+        font-size: 2.5em;
+        padding: 0 0.5em 0.5em;
+    }
+
+    .block-eight img {
+        width: 9em;
+        padding: 0.5em 0;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-one p:first-of-type {
+        font-size: 3.5em;
+        padding: 0.5em 0.5em 0 0.5em;
+    }
+
+    .block-two img {
+      width: 100%;
+    }
+
+    .block-two p {
+        margin: 0 0.5em 0.5em 0.5em;
+        font-size: 1.9em;
+    }
+
+    .block-three {
+        align-items: start;
+    }
+
+    .block-three img {
+        margin-left: 2em;
+    }
+
+    .block-four {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        
+    }
+
+    .block-four p:first-of-type {
+        padding: 0;
+        margin-left: 0.5em;
+    }
+
+    .block-four img {
+        margin: 0;
+        width: 20em;
+        height: auto;
+    }
+
+    .block-four p:last-of-type {
+        padding: 0.5em 2em;
+        font-size: 1.3em;
+
+    }
+
+    .block-five {
+        flex-direction: column;
+    }
+
+    .block-five img {
+        margin-top: 1em;
+        width: 14.5em;
+        height: auto;
+    }
+
+    .block-five p {
+        margin: 0.5em 0;
+        font-size: 2.3em;
+    }
+
+    .block-six {
+        align-items: start;
+    }
+
+    .block-six p {
+        padding-left: 1em;
+        font-size: 1.3rem;
+    }
+
+    .block-six p span {
+        font-size: 3.2rem;
+    }
+    
+    .block-six img {
+        padding: 0 1.5em 1.5em 1.5em;
+    }
+
+    .block-seven {
+        align-items: unset;
+    }
+
+    .block-seven img {
+        margin: 0 0 5em 2em;
+    }
+
+    .block-eight {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .block-eight p {
+        margin: 0.5em 0 0 0.5em;
+        font-size: 2.2em;
+    }
+
+    .block-eight img {
+        padding: 0;
+        margin: 0 0 1.5em 1.5em;
+        width: 15em;
+        height: auto;
+    }
+
+    @media screen and (max-width: 375px) {
+        .block-one p:first-of-type {
+            font-size:3rem;
+        }
+
+        .block-two {
+            font-size: 0.75rem;
+            padding: 0.3em;
+        }
+
+        .block-three {
+            font-size: 0.8rem;
+        }
+
+        .block-three img {
+            width: 15em;
+        }
+
+        .block-four {
+            font-size: 0.8rem;
+        }
+
+        .block-four img {
+            width: 24em;
+    }
+    }
+}
